@@ -144,8 +144,8 @@
 .weather-type {
   font-size: 24px;
   color: white;
-  padding-left: 7%;
-  padding-top: 6%;
+  padding-left: 3%;
+  padding-top: 2%;
 }
 
 .information {
@@ -160,6 +160,7 @@
   border-radius: 50%;
   background: white;
   margin-top: 25px;
+  margin-left: 2%;
 }
 
 .degree {
@@ -178,10 +179,15 @@
 
 .temparature {
   position: relative;
-  font-size: 94px;
+  font-size: 70px;
   font-weight: bold;
   color: white;
-  margin-top: 16%;
+  margin-top: 3%;
+  padding-left: -2%;
+}
+
+.weather-report {
+  display: flex;
 }
 
 .place {
@@ -282,7 +288,6 @@
 
 .night .weather-background {
   background: linear-gradient(to right, #551fe8, #de37f8, #c062e3);
-  height: 250px;
   width: 1000px;
   margin: 200px auto;
   position: relative;
@@ -290,7 +295,8 @@
   overflow: hidden;
 }
 .night .day-place {
-  padding-top: 4%;
+  padding-top: 3%;
+  padding-left: 7%;
 }
 .night .sun {
   display: none;
@@ -346,7 +352,7 @@
 }
 .night .cloud-image {
   width: 65%;
-  margin-left: 86%;
+  margin-left: 101%;
   position: relative;
   filter: blur(1px);
 }

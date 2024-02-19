@@ -126,8 +126,8 @@ $background-color_1: white;
 .weather-type {
   font-size: 24px;
   color: $color_1;
-  padding-left: 7%;
-  padding-top: 6%;
+  padding-left: 3%;
+  padding-top: 2%;
 }
 .information {
   display: flex;
@@ -140,6 +140,7 @@ $background-color_1: white;
   border-radius: 50%;
   background: $color_1;
   margin-top: 25px;
+  margin-left: 2%;
 }
 .degree {
   position: absolute;
@@ -154,10 +155,14 @@ $background-color_1: white;
 }
 .temparature {
   position: relative;
-  font-size: 94px;
+  font-size: 70px;
   font-weight: bold;
   color: $color_1;
-  margin-top: 16%;
+  margin-top: 3%;
+  padding-left: -2%;
+}
+.weather-report {
+  display: flex;
 }
 .place {
   color: $color_1;
@@ -259,7 +264,7 @@ $background-color_1: white;
 .night {
   .weather-background {
     background: linear-gradient(to right, #551fe8, #de37f8, #c062e3);
-    height: 250px;
+    // height: 250px;
     width: 1000px;
     margin: 200px auto;
     position: relative;
@@ -267,7 +272,8 @@ $background-color_1: white;
     overflow: hidden;
   }
   .day-place {
-    padding-top: 4%;
+    padding-top: 3%;
+    padding-left: 7%;
   }
 
   .sun {
@@ -325,7 +331,7 @@ $background-color_1: white;
 
   .cloud-image {
     width: 65%;
-    margin-left: 86%;
+    margin-left: 101%;
     position: relative;
     filter: blur(1px);
   }

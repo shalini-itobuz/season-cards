@@ -10,6 +10,9 @@
 
   <body>
     <section class="season-section night">
+      <input type="text" id="locationInput" placeholder="Enter Location" />
+      <button onclick="getWeather()">Get Weather</button>
+      <div id="weatherInfo"></div>
       <div class="weather-background">
         <div class="sun"></div>
 
@@ -42,25 +45,18 @@
             <div class="rain-drop raindrop19"></div>
             <div class="rain-drop raindrop20"></div>
           </div>
-          <div class="weather-type">Sunny</div>
+
+          <div class="weather-type"></div>
+
           <div class="information">
             <div class="weather-report">
-              <div class="temparature">
-                27
-                <div class="degree">°</div>
+              <div class="temparature"></div>
+              <div class="verticalLine"></div>
+              <div class="day-place" id="datePlace"></div>
+              <div class="cloud">
+                <img class="cloud-image" src="./images/cloud-solid.svg" />
+                <img class="moon" src="./images/moon.png" />
               </div>
-            </div>
-            <div class="verticalLine"></div>
-            <div class="day-place">
-              <div class="day">Sunday, 12 July</div>
-              <div class="place">
-                <span><i class="fa-solid fa-location-dot"></i></span>
-                Paris
-              </div>
-            </div>
-            <div class="cloud">
-              <img class="cloud-image" src="./images/cloud-solid.svg" />
-              <img class="moon" src="./images/moon.png" />
             </div>
           </div>
           <div class="cloud">
@@ -72,5 +68,6 @@
         </div>
       </div>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
