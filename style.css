@@ -340,6 +340,10 @@ a:hover {
   left: -17%;
   top: 44%;
 }
+.day .day-place {
+  padding-top: 3%;
+  padding-left: 7%;
+}
 .day .sun-ray-light {
   width: 400px;
   height: 400px;
@@ -490,6 +494,7 @@ a:hover {
 }
 .rainy .day-place {
   padding-top: 3%;
+  padding-left: 7%;
 }
 .rainy .rainy-rain .rain-drop {
   height: 30px;

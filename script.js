@@ -8,7 +8,8 @@ function getWeather() {
         .then((data) => {
             const weatherInfo = document.getElementById("weatherInfo");
             weatherInfo.innerHTML = "";
-            const placeInput=data.location.name;
+
+            const placeInput = data.location.name;
             const temperature = data.current.temp_c;
             const weatherCondition = data.current.condition.text;
             const currentDate = new Date().toLocaleDateString("en-US", {
@@ -17,23 +18,28 @@ function getWeather() {
                 month: "long",
                 day: "numeric",
             });
-            const weatherTypeDisplay = document.createElement("div");
+
+            const weatherTypeDisplay = document.querySelector(".weather-type");
             weatherTypeDisplay.innerHTML = weatherCondition;
-            document
-                .querySelector(".weather-type")
-                .appendChild(weatherTypeDisplay);
-            weatherTypeDisplay.setAttribute('class', 'weather-type')
-            const temperatureDisplay = document.createElement("div");
+
+            const temperatureDisplay = document.querySelector(".temparature");
             temperatureDisplay.innerHTML = `${temperature}°C`;
-            document
-                .querySelector(".temparature")
-                .appendChild(temperatureDisplay);
-            temperatureDisplay.setAttribute('class', 'temparature')
-
-
 
             const datePlace = document.getElementById("datePlace");
             datePlace.innerHTML = `<div class="day">${currentDate}</div><div class="place"><span><i class="fa-solid fa-location-dot"></i></span>${placeInput}</div>`;
+
+            const section = document.querySelector(".season-section");
+            section.classList.remove("cloudy", "rainy", "night");
+
+            if (weatherCondition.toLowerCase().includes("sunny")) {
+                section.classList.add("day");
+            } else if (weatherCondition.toLowerCase().includes("cloud")) {
+                section.classList.add("cloudy");
+            } else if (weatherCondition.toLowerCase().includes("rain")) {
+                section.classList.add("rainy");
+            } else {
+                section.classList.add("night");
+            }
         })
         .catch((error) => console.log(error));
 }
