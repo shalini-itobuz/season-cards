@@ -33,11 +33,11 @@ function getWeather() {
 
             if (weatherCondition.toLowerCase().includes("sunny")) {
                 section.classList.add("day");
-            } else if (weatherCondition.toLowerCase().includes("cloud")) {
+            } else if (weatherCondition.toLowerCase().includes(["cloud","Partly cloudy"])) {
                 section.classList.add("cloudy");
             } else if (weatherCondition.toLowerCase().includes("rain")) {
-                section.classList.add("rainy");
-            } else {
+                section.classList.add("rainy");}
+             else {
                 section.classList.add("night");
             }
         })
