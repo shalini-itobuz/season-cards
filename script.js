@@ -35,12 +35,10 @@ function getWeather() {
                 section.classList.add("day");
             } else if (weatherCondition.toLowerCase().includes(["cloud", "Partly cloudy"])) {
                 section.classList.add("night");
-            } else if (weatherCondition.toLowerCase().includes("rain")) {
+            } else 
                 section.classList.add("rainy");
-            }
-            else {
-                section.classList.add("night");
-            }
+            
+          
         })
         .catch((error) => console.log(error));
 }

@@ -1,11 +1,11 @@
 $color_1: white;
-$font-family_1: sans-serif;
-$background-color_1: white;
+$font-family: sans-serif;
+$background-color_white: white;
 
 * {
   margin: 0;
   padding: 0;
-  font-family: $font-family_1;
+  font-family: $font-family;
   box-sizing: border-box;
 }
 
@@ -14,6 +14,13 @@ $background-color_1: white;
   flex-direction: row;
   justify-content: center;
   margin-top: 5%;
+}
+
+.rain-clouds,
+.thunder,
+.cloud-image,
+.moon {
+  display: none;
 }
 
 $background: #f5f6fa;
@@ -410,6 +417,11 @@ a {
     overflow: hidden;
   }
 
+  .cloud-image,
+  .moon {
+    display: block;
+  }
+
   .day-place {
     padding-top: 3%;
     padding-left: 7%;
@@ -498,7 +510,7 @@ a {
       width: 30px;
       border-radius: 50%;
       opacity: 0.6;
-      background-color: $background-color_1;
+      background-color: $background-color_white;
       position: absolute;
       filter: blur(4px);
     }
@@ -514,6 +526,14 @@ a {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+  }
+
+  .weather-type {
+    padding-left: 6%;
+  }
+
+  .weather-report {
+    padding-top: 2%;
   }
 
   .sun {
@@ -557,13 +577,18 @@ a {
     padding-left: 7%;
   }
 
+  .rain-clouds,
+  .thunder {
+    display: block;
+  }
+
   .rainy-rain {
     .rain-drop {
       height: 30px;
       width: 5px;
       border-radius: 50%;
       opacity: 0.6;
-      background-color: $background-color_1;
+      background-color: $background-color_white;
       position: absolute;
       filter: blur(2px);
     }

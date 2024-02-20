@@ -12,6 +12,13 @@
   margin-top: 5%;
 }
 
+.rain-clouds,
+.thunder,
+.cloud-image,
+.moon {
+  display: none;
+}
+
 :root {
   background: #f5f6fa;
   color: #9c9c9c;
@@ -393,6 +400,11 @@ a:hover {
   overflow: hidden;
 }
 
+.night .cloud-image,
+.night .moon {
+  display: block;
+}
+
 .night .day-place {
   padding-top: 3%;
   padding-left: 7%;
@@ -495,6 +507,14 @@ a:hover {
   overflow: hidden;
 }
 
+.rainy .weather-type {
+  padding-left: 6%;
+}
+
+.rainy .weather-report {
+  padding-top: 2%;
+}
+
 .rainy .sun {
   display: none;
 }
@@ -534,6 +554,11 @@ a:hover {
 .rainy .day-place {
   padding-top: 3%;
   padding-left: 7%;
+}
+
+.rainy .rain-clouds,
+.rainy .thunder {
+  display: block;
 }
 
 .rainy .rainy-rain .rain-drop {
