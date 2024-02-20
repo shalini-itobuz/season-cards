@@ -29,12 +29,12 @@ function getWeather() {
             datePlace.innerHTML = `<div class="day">${currentDate}</div><div class="place"><span><i class="fa-solid fa-location-dot"></i></span>${placeInput}</div>`;
 
             const section = document.querySelector(".season-section");
-            section.classList.remove("cloudy", "rainy", "night");
+            section.classList.remove("day", "rainy", "night");
 
             if (weatherCondition.toLowerCase().includes("sunny")) {
                 section.classList.add("day");
             } else if (weatherCondition.toLowerCase().includes(["cloud", "Partly cloudy"])) {
-                section.classList.add("cloudy");
+                section.classList.add("night");
             } else if (weatherCondition.toLowerCase().includes("rain")) {
                 section.classList.add("rainy");
             }
