@@ -8,7 +8,7 @@ function getWeather() {
         .then((data) => {
             const weatherInfo = document.getElementById("weatherInfo");
             weatherInfo.innerHTML = "";
-
+            const placeInput=data.location.name;
             const temperature = data.current.temp_c;
             const weatherCondition = data.current.condition.text;
             const currentDate = new Date().toLocaleDateString("en-US", {
@@ -33,7 +33,7 @@ function getWeather() {
 
 
             const datePlace = document.getElementById("datePlace");
-            datePlace.innerHTML = `<div class="day">${currentDate}</div><div class="place"><span><i class="fa-solid fa-location-dot"></i></span>${location}</div>`;
+            datePlace.innerHTML = `<div class="day">${currentDate}</div><div class="place"><span><i class="fa-solid fa-location-dot"></i></span>${placeInput}</div>`;
         })
         .catch((error) => console.log(error));
 }

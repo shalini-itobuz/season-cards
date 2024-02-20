@@ -10,8 +10,31 @@
 
   <body>
     <section class="season-section night">
-      <input type="text" id="locationInput" placeholder="Enter Location" />
-      <button onclick="getWeather()">Get Weather</button>
+      <div class="locationInp">
+        <!-- <input type="text" id="locationInput" placeholder="Enter Location" />
+        <button class="locationInputBtn" onclick="getWeather()">
+          Get Weather
+        </button> -->
+        <div class="container">
+          <div class="container__item">
+            <form class="form">
+              <input
+                type="text"
+                id="locationInput"
+                class="form__field"
+                placeholder="Enter Location"
+              />
+              <button
+                type="button"
+                class="btn btn--primary btn--inside uppercase"
+                onclick="getWeather()"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div id="weatherInfo"></div>
       <div class="weather-background">
         <div class="sun"></div>
