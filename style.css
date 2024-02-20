@@ -27,6 +27,7 @@ body,
 a {
   color: inherit;
 }
+
 a:hover {
   color: #7f8ff4;
 }
@@ -53,6 +54,7 @@ a:hover {
   transition: all 200ms ease-in;
   cursor: pointer;
 }
+
 .btn--primary {
   background: #7f8ff4;
   color: #fff;
@@ -60,13 +62,16 @@ a:hover {
   border-radius: 2px;
   padding: 12px 36px;
 }
+
 .btn--primary:hover {
   background: #6c7ff2;
 }
+
 .btn--primary:active {
   background: #7f8ff4;
   box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
+
 .btn--inside {
   margin-left: -96px;
 }
@@ -282,18 +287,23 @@ a:hover {
 .day .cloud {
   display: none;
 }
+
 .day .moon {
   display: none;
 }
+
 .day .rain-clouds {
   display: none;
 }
+
 .day .thunder {
   display: none;
 }
+
 .day .dew-drop {
   display: none;
 }
+
 .day .weather-background {
   background: linear-gradient(to right, #1d92ff, #46aaff, #5fbaff);
   height: 250px;
@@ -306,6 +316,7 @@ a:hover {
   align-items: center;
   padding: 0 75px;
 }
+
 .day .sun {
   width: 170px;
   height: 170px;
@@ -316,9 +327,11 @@ a:hover {
   top: -12%;
   left: 87%;
 }
+
 .day .information {
   gap: 70px;
 }
+
 .day .sunrays {
   width: 300px;
   height: 300px;
@@ -331,6 +344,7 @@ a:hover {
   left: 82%;
   filter: blur(5px);
 }
+
 .day .sun-reflection {
   width: 300px;
   height: 300px;
@@ -340,10 +354,12 @@ a:hover {
   left: -17%;
   top: 44%;
 }
+
 .day .day-place {
   padding-top: 3%;
   padding-left: 7%;
 }
+
 .day .sun-ray-light {
   width: 400px;
   height: 400px;
@@ -355,6 +371,7 @@ a:hover {
   top: -84%;
   left: 139%;
 }
+
 .day .sun-ray-lighter {
   width: 400px;
   height: 400px;
@@ -375,36 +392,45 @@ a:hover {
   border-radius: 30px;
   overflow: hidden;
 }
+
 .night .day-place {
   padding-top: 3%;
   padding-left: 7%;
 }
+
 .night .sun {
   display: none;
 }
+
 .night .thunder {
   display: none;
 }
+
 .night .raindrop1 {
   top: 21px;
   left: 52px;
 }
+
 .night .raindrop2 {
   top: 83px;
   left: 17px;
 }
+
 .night .raindrop6 {
   top: -11px;
   left: 171px;
 }
+
 .night .raindrop8 {
   top: 150px;
   left: 106px;
 }
+
 .night .raindrop4 {
   top: 83px;
   left: 85px;
 }
+
 .night .raindrop2,
 .night .raindrop4,
 .night .raindrop6,
@@ -412,6 +438,7 @@ a:hover {
   height: 10px !important;
   width: 10px !important;
 }
+
 .night .rain-clouds,
 .night .raindrop7,
 .night .raindrop9,
@@ -428,15 +455,18 @@ a:hover {
 .night .raindrop20 {
   display: none;
 }
+
 .night .information {
   gap: 70px;
 }
+
 .night .cloud-image {
   width: 65%;
   margin-left: 101%;
   position: relative;
   filter: blur(1px);
 }
+
 .night .moon {
   position: absolute;
   width: 9%;
@@ -444,6 +474,7 @@ a:hover {
   left: 90%;
   transform: rotate(-20deg);
 }
+
 .night .night-rain .rain-drop {
   height: 30px;
   width: 30px;
@@ -463,39 +494,48 @@ a:hover {
   border-radius: 30px;
   overflow: hidden;
 }
+
 .rainy .sun {
   display: none;
 }
+
 .rainy .dew-drop {
   display: none;
 }
+
 .rainy .moon {
   display: none;
 }
+
 .rainy .degree {
   position: absolute;
   top: -15%;
   left: 106%;
 }
+
 .rainy .information {
   gap: 70px;
 }
+
 .rainy .thunder {
   width: 5%;
   position: absolute;
   top: 58%;
   left: 89%;
 }
+
 .rainy .rain-clouds {
   width: 20%;
   margin-left: 81%;
   position: absolute;
   margin-top: -16px;
 }
+
 .rainy .day-place {
   padding-top: 3%;
   padding-left: 7%;
 }
+
 .rainy .rainy-rain .rain-drop {
   height: 30px;
   width: 5px;
@@ -504,4 +544,6 @@ a:hover {
   background-color: white;
   position: absolute;
   filter: blur(2px);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
