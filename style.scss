@@ -1,4 +1,4 @@
-$color_1: white;
+$color_white: white;
 $font-family: sans-serif;
 $background-color_white: white;
 
@@ -245,7 +245,7 @@ a {
 
 .weather-type {
   font-size: 24px;
-  color: $color_1;
+  color: $color_white;
   padding-left: 3%;
   padding-top: 2%;
 }
@@ -260,7 +260,7 @@ a {
   height: 90px;
   width: 5px;
   border-radius: 50%;
-  background: $color_1;
+  background: $color_white;
   margin-top: 25px;
   margin-left: 2%;
 }
@@ -283,7 +283,7 @@ a {
   position: relative;
   font-size: 70px;
   font-weight: bold;
-  color: $color_1;
+  color: $color_white;
   margin-top: 3%;
   padding-left: -2%;
 }
@@ -293,7 +293,7 @@ a {
 }
 
 .place {
-  color: $color_1;
+  color: $color_white;
   font-size: 25px;
   padding-top: 4px;
 }
@@ -301,7 +301,7 @@ a {
 .day-place {
   padding-top: 8%;
   font-size: 25px;
-  color: $color_1;
+  color: $color_white;
 }
 
 .day {
@@ -356,7 +356,7 @@ a {
   .sunrays {
     width: 300px;
     height: 300px;
-    background: $color_1;
+    background: $color_white;
     z-index: 1;
     opacity: 0.5;
     border-radius: 50%;
